@@ -139,8 +139,14 @@ We prepared our minimal installation of Debian, now we are ready to sail for the
 sudo apt install kde-plasma-desktop
 ```
 
-And remove unnecessary programs:
+Remove unnecessary programs:
 
 ```
 sudo apt purge zutty vim && sudo apt autoremove
+```
+
+Add necessary programs:
+
+```
+sudo apt install dolphin-plugins
 ```
