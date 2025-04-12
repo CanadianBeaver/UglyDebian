@@ -2,33 +2,145 @@
 
 ## Introduction
 
-When the [Debian OS](https://www.debian.org/) was released in 1993, I was in my last year of high school. I enjoyed building programs and employing algorithms, and decided to become a programmer. Today, software development is my profession, but, surprisingly, I had never heard of Debian until 2013.
+When the [Debian OS](https://www.debian.org/) was released in 1993, I was in my last year of high school. I enjoyed building programs and employing algorithms, and decided to become a programmer. Today, software development is my profession, but, surprisingly, I had never heard of Debian until 2013. At that time, I was looking for a good solution for everyday home computing, while at the same time I needed a virtualization station for developing software on Microsoft Windows and Microsoft Visual Studio for my several clients with a particular environment for each of them.
 
-At that time, I was looking for a good solution for everyday home computing, while at the same time I needed a virtualization station for developing software on Microsoft Windows and Microsoft Visual Studio. There are many variants for virtualization based on Microsoft Windows, for example VMware Virtualization for Desktop or Microsoft Hyper-V, but I can not afford to the time required to adopt Windows 8 or any similar Metro-style interface, nor can I afford to pay each time Microsoft Windows is updated. Moreover, there is an assumption that Microsoft monitoring user activity and collecting private user data. I decided that my desktop computer ought to have free and open software as its primary operating system.
-
-I started my research by considering using Ubuntu 12.04 and Oracle VirtualBox in parallel with Microsoft Windows 8 and Hyper-V. A problem emerged. Despite its impressive appearance, Ubuntu is not always the most stable OS. However, I tied my best to work with it for about 6 months until the arrival of Debian 7 "Wheezy" in May 2013. Debian was quite a contrast to Ubuntu. It was very fast and stable. Unfortunately, it is butt ugly!
-
-It turns out to be quite difficult to make Ubuntu more stable, but fortunately, I figured out how to give Debian a more contemporary appearance, and to work better. Today, Debian 12 "Bookworm" is the primary operating system on my desktop PC.
+I started my research by considering using Ubuntu 12.04 and Oracle VirtualBox in parallel with Microsoft Windows 8 and Hyper-V. A problem emerged. Despite its impressive appearance, Ubuntu is not always the most stable OS. However, I tied my best to work with it for about 6 months until the arrival of Debian 7 "Wheezy" in May 2013. Debian was quite a contrast to Ubuntu. It was very fast and stable. Unfortunately, it is butt ugly! It turns out to be quite difficult to make Ubuntu more stable, but fortunately, I figured out how to give Debian a more contemporary appearance, and to work better. Today, Debian 12 "Bookworm" is the primary operating system on my PC.
 
 ## Hardware
 
-The stories about compatible hardware for Linux are very funny stories. Probability, the newest hardware will not work on Linux. In addition, ATI or [NVIDIA](http://www.wired.com/2012/06/torvalds-nvidia-linux/) discrete video card can make an issue. I have never had discrete video cards since 2010 and that saves my nerves and of course, saves money. Today, Intel CPU has faster inbound GPU, and usually it is enough for everything. For example, I am using `Intel i5-9400 Processor`. It is not a new CPU, [but I am happy when news about K and HK series comes](https://duckduckgo.com/?q=intel+K+and+HK+bugs+2023). Also, I never used AMD and I do not know how Debian work on AMD hardware, but this question is [very popular](https://duckduckgo.com/?q=Does+Linux+run+better+on+AMD+or+Intel+hardware). Moreover, at least 8 GB (16 GB and more is better) of memory and CPU with [VT-x](https://en.wikipedia.org/wiki/X86_virtualization#Intel_virtualization_.28VT-x.29) or [AMD-V](https://en.wikipedia.org/wiki/X86_virtualization#AMD_virtualization_.28AMD-V.29) technology is required for virtualization. SSD disk can make Debian faster, but will be great if partition for virtual disks is stored on separate HDD.
+The stories about compatible hardware for Linux are very funny stories. Probability, the newest hardware will not work on Linux. In addition, `ATI` or [`NVIDIA`](http://www.wired.com/2012/06/torvalds-nvidia-linux/) discrete video card can make an issue. And it is not surprising that everyone is ~~mining cryptocurrencies~~ developing AI technologies these days. Taht means, NVIDIA is a must, are not you? Fortunately, in `Debian` you can use open source drivers or proprietary (non-fee) drivers that works. Also, fortunately Intel's CPU works very well, especially Intel integrated graphics. I have no idea how to deal with AMD, but last stories about Intel global fails related to his CPU with indexes `K` and `HX` in 2024 raised popularity of AMD CPU.
 
-And it is not surprising that everyone is ~~mining cryptocurrencies~~ developing AI technologies these days. So, NVidia is a must, are not you? In `Debian` you can use open drivers or non-fee. Users choose non-free mostly.
+Despite this, the Intel + NVIDIA combination is the most popular now and will probably remain so in the near future. Lots of streamers, lots of gamers, lots of machine learning, lots of slackers. The details have changed, but not the big picture, which has been stable since the Dot-com bubble. Blue plus Green is a good choice for professional jobs, red plus red for... [periphery countries](https://en.wikipedia.org/wiki/Periphery_countries)?
 
 ## Software
 
-Debian has at least [three releases](https://www.debian.org/releases/index.html): stable, testing and unstable. Although software in the stable release are old for two or even four years, the stable release of Debian can be a base for building home using desktop PC. In many cases home user does not know exactly what is the version of software that are using and what is the difference between the actual version of software and the previous version. In some cases, when software is ancient in the stable release, the user can install the most recent version of software from testing release of Debian or directly from vendor repository. Even though I prefer the stable release of Debian, I am using vendor repositories or flatpack, especially for software that I need new.
+Debian has at least [three releases](https://www.debian.org/releases/index.html): stable, testing and unstable. Although software in the stable release are old for two or even four years, the stable release of Debian can be a base for building home using or proffesional using desktop PC. If some software in the stable version is out of date, the user can install the latest version of the software from [Debian backports](https://backports.debian.org/), from [flatpack](https://flatpak.org/), or directly from the vendor's repository. Although I prefer Debian stable, I use the vendor's repositories or flatpack, especially for software that I need to be new.
 
-Unlike Microsoft Windows, Debian has several [desktop environments and window managers](https://wiki.debian.org/DesktopEnvironment). I prefer simple, fast and useful desktop. Actually, newest Gnome3 and KDE are not on this way. Gnome3 looks strange and unfortunately, WinKey does not work with VirtualBox. This problem there is also in Ubuntu and all other graphical environments based on Gnome3. KDE is very glossy and eats amount of memory, but people often like it. XFCE and LXDE is quite spartan and point for slow or old computers. I prefer middle may, therefore I am used to working with [MATE Desktop Environment](http://mate-desktop.com/). The MATE Desktop Environment has evolved from Gnome2 and offers such a great desktop environment. It is really simple, really fast and really useful... Great speech 10 years ago. Currently, KDE is the only competitor.
+> Unlike Microsoft Windows, Debian has several [desktop environments and window managers](https://wiki.debian.org/DesktopEnvironment). I prefer simple, fast and useful desktop. Actually, newest Gnome3 and KDE are not on this way. Gnome3 looks strange and unfortunately, WinKey does not work with VirtualBox. This problem there is also in Ubuntu and all other graphical environments based on Gnome3. KDE is very glossy and eats amount of memory, but people often like it. XFCE and LXDE is quite spartan and point for slow or old computers. I prefer middle may, therefore I am used to working with [MATE Desktop Environment](http://mate-desktop.com/). The MATE Desktop Environment has evolved from Gnome2 and offers such a great desktop environment. It is really simple, really fast and really useful...
 
-Default installation of Debian includes a lot of extra software. We will think out of the box and are starting from minimal Debian installation without desktop environment. I prefer a hands-off way to install all necessary software, because it gives me the possibility to install the minimum of software. To do it, when installation of Debian comes to finish, the most important step is on "Software selection" (all items should be deselected):
+It was a great speech 10 years ago. Currently, [KDE Desktop Environment](https://kde.org/) is the only competitor. I realized that the software I use in my work is based on QT in 99% of cases. Krita, OBS Studio, Shotcut... Gimp died, sad, but true. The exception is the Chromium engine that is based on Gtk.
 
-![Image 1](https://www.codeproject.com/KB/install/1086376/Debian_Software.png)
+The problem with KDE is the same as Mate had 10 years ago. Default installation of Debian includes a lot of extra software, that installed with very strong dependencies. It is not possible to install the full KDE and remove that you do not need, like in Ubuntu. We will think out of the box and are starting from minimal Debian installation without desktop environment. After the minimal Debian system was installed we can set up our system and will install and will configure desktop environment and user interface.
 
-After the minimal Debian system was installed we can set up our system and will install and will configure desktop environment and user interface.
+## Minimal instalation of Debian
 
-For more information how to install Debian see the [step by step instruction](https://debian-handbook.info/browse/stable/sect.installation-steps.html).
+I will not describe the entire installation process in detail. I will only point out specific points that differ from a normal installation. For more information how to install Debian see the [step-by-step instruction](https://debian-handbook.info/browse/stable/sect.installation-steps.html). Usually I am using `expert installation` and here is the main things.
+
+> **WARNING** You may need swap partition more than DRAM, because swap is used for hibernation.
+
+Not allow `root` at all and allow using `sudo` command:
+![Image 1](./images/installation/installation_2001.png)
+
+Allow using repositories from Internet:
+![Image 2](./images/installation/installation_2002.png)
+
+Allow using non-free drivers:
+![Image 3](./images/installation/installation_2003.png)
+
+Allow using non-free software:
+![Image 4](./images/installation/installation_2004.png)
+
+We do not need the source code, we will not compile the software from scratch:
+![Image 5](./images/installation/installation_2005.png)
+
+Allow using backports:
+![Image 6](./images/installation/installation_2006.png)
+
+Allow autoupdate software:
+![Image 7](./images/installation/installation_2007.png)
+
+No installation for desktop environment, we will do it later:
+![Image 8](./images/installation/installation_2008.png)
+
+Allow using normal time, like in Windows:
+![Image 9](./images/installation/installation_2009.png)
 
 ## Setting up Debian after minimal installation
 
+After that minimal Debian system was installed there is only console, like oldest `command.com` from MS-DOS. Before installing Desktop Environment, Debian should be prepared and console is enough to do this. The steps below describe how to make Debian looks so good with any desktop environment. Most of the commands in examples should run with sudo command. Also, the preferred console-based text editor can be used for editing configuration files during Debian preparation, for example the GNU `nano` text editor exists in minimal Debian system. Moreover, be ready to provide Debian DVD because most of the packages exist on it.
+
+### 1. SUDO user settings
+
+First step describes how to allow regular users to run a command with administrative privileges. During the Debian installation we added `sudo` group and added our user to that group. Now we will remove requirements to ask for a password every time we run something that require root privileges. This behaviour can be done with help of `visudo` command which will run editor for changing `/etc/sudoers` file. In this file the `%sudo` line should be changed, so the `NOPASSWD: ALL` option will pop at the end of line instead of `ALL` option:
+
+```
+sudo visudo
+```
+
+Change line starting with `%sudo` to the follwoing:
+
+```
+%sudo ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+![Image 1](./images/preparation/preparation_01.png)
+
+After reboot sudo command can be able to use without asking user password. Reboot can be done by command:
+
+```
+sudo reboot
+```
+
+More information about SUDO package in Debian: https://wiki.debian.org/sudo
+
+### 2. SWAP optimization
+
+Swap partition can be everywhere. Debian can keep swap data in partitions or in files or works without swap, but swap partition is necessary for hibernate or virtualization. In some cases using SSD disk for swap is not a good solution. In these cases you are the BOSS, but anyway I recommend reducing swap usage. Reducing swap usage can be setting in `/etc/sysctl.conf` file:
+
+```
+sudo nano /etc/sysctl.conf
+```
+
+Add the following string at the end of `/etc/sysctl.conf` file:
+
+```
+vm.swappiness=1
+```
+
+This value (1 in example) should be in percentage of RAM. It means that swap partition will be used in Debian only when there are less than 1% of free RAM.
+
+More information about swap file in Debian: https://wiki.debian.org/Swap
+
+### 3. Keyboard settings
+
+The Debian works with many international keyboards and languages. There is a command for setup keyboard configuration:
+
+```
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+These command updates `/etc/default/keyboard` file. It is enough to work in a single language environment, but when user wants to work with different languages is not enough. Fortunately, setup of multilingual input for Debian is simple. Keyboard model (`XKBMODEL` option) and language layouts (`XKBLAYOUT` option) are stored in `/etc/default/keyboard` file. Multiple layouts may be specified in a comma-separated list, for example (keyboard with MS Windows keys, American English and Russian language layouts):
+
+```
+sudo nano /etc/default/keyboard
+```
+
+And the file needs to be changed as follows:
+
+```
+XKBMODEL="pc105"
+XKBLAYOUT="us,ru"
+XKBOPTIONS="grp:alt_shift_toggle,numpad:microsoft"
+```
+
+This configuration is very similar to what we usually have working in any office. Let's keep it at home as well.
+
+![Image 1](./images/preparation/preparation_02.png)
+
+In additional, switching between language layouts can be lighted by status lights on keyboard. Option `grp_led:scroll` in `XKBOPTIONS` means that Scroll lock status light will be turned on after language layout was changed.
+
+More information about keyboard options in Debian: https://wiki.debian.org/Keyboard
+
+## Instal KDE
+
+We prepared our minimal installation of Debian, now we are ready to sail for the Horn. Let's do it, it is simple:
+
+```
+sudo apt install kde-plasma-desktop
+```
+
+And remove unnecessary programs:
+
+```
+sudo apt purge zutty vim && sudo apt autoremove
+```
