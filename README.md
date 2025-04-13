@@ -175,23 +175,21 @@ Remove unnecessary programs:
 sudo apt purge zutty vim-common debian-faq && sudo apt autoremove
 ```
 
-Add necessary pligins:
+## Instal other software
+
+### Necessary plugins
 
 ```
 sudo apt install dolphin-plugins aspell-ru hunspell-ru irussian
 ```
 
-Useful package manager, unfortunately, from GTK:
+### Alternative package manager
 
 ```
 sudo apt install synaptic apt-xapian-index software-properties-gtk
 ```
 
-## Instal other software
-
 ### Git and Nodejs
-
-Install `nodejs` and `npm`
 
 ```
 sudo apt install git nodejs npm
