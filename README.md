@@ -208,11 +208,3 @@ and setup settings:
 git config --global user.email "[user.email]"
 git config --global user.name "[user.name]"
 ```
-
-### At the end
-
-Remove unnecessary programs:
-
-```
-sudo apt install purge xterm
-```
