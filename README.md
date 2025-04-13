@@ -192,7 +192,7 @@ sudo apt install synaptic apt-xapian-index software-properties-gtk
 Install `nodejs` and `npm`
 
 ```
-sudo apt install nodejs npm`
+sudo apt install git nodejs npm`
 ```
 
 ## Setup settings
