@@ -189,15 +189,15 @@ sudo apt install synaptic apt-xapian-index software-properties-gtk
 
 ## Instal other software
 
+### Git and Nodejs
+
 Install `nodejs` and `npm`
 
 ```
-sudo apt install git nodejs npm`
+sudo apt install git nodejs npm
 ```
 
-## Setup settings
-
-Git:
+and setup settings:
 
 ```
 git config --global user.email "[user.email]"
