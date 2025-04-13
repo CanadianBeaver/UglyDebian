@@ -8,9 +8,9 @@ I started my research by considering using Ubuntu 12.04 and Oracle VirtualBox in
 
 ## Hardware
 
-The stories about compatible hardware for Linux are very funny stories. Probability, the newest hardware will not work on Linux. In addition, `ATI` or [`NVIDIA`](http://www.wired.com/2012/06/torvalds-nvidia-linux/) discrete video card can make an issue. And it is not surprising that everyone is ~~mining cryptocurrencies~~ developing AI technologies these days. Taht means, NVIDIA is a must, are not you? Fortunately, in `Debian` you can use open source drivers or proprietary (non-fee) drivers that works. Also, fortunately Intel's CPU works very well, especially Intel integrated graphics. I have no idea how to deal with AMD, but last stories about Intel global fails related to his CPU with indexes `K` and `HX` in 2024 raised popularity of AMD CPU.
+The stories about compatible hardware for Linux are very funny stories. Probability, the newest hardware will not work on Linux. In addition, `ATI` or [`NVIDIA`](http://www.wired.com/2012/06/torvalds-nvidia-linux/) discrete video card can make an issue. And it is not surprising that everyone is ~~mining cryptocurrencies~~ developing AI technologies these days. That means, NVIDIA is a must, are not you? Fortunately, in `Debian` you can use open source drivers or proprietary (non-fee) drivers that works. Also, fortunately Intel's CPU works very well, especially Intel integrated graphics. I have no idea how to deal with AMD, but last stories about Intel global fails related to his CPU with indexes `K` and `HX` in 2024 raised popularity of AMD CPU.
 
-Despite this, the Intel + NVIDIA combination is the most popular now and will probably remain so in the near future. Lots of streamers, lots of gamers, lots of machine learning, lots of slackers. The details have changed, but not the big picture, which has been stable since the Dot-com bubble. Blue plus Green is a good choice for professional jobs, red plus red for... [periphery countries](https://en.wikipedia.org/wiki/Periphery_countries)?
+Despite this, the Intel + Nvidia combination is the most popular now and will probably remain so in the near future. Lots of streamers, lots of gamers, lots of machine learning, lots of slackers. The details have changed, but not the big picture, which has been stable since the Dot-com bubble. Blue plus Green is a good choice for professional jobs, red plus red for... [periphery countries](https://en.wikipedia.org/wiki/Periphery_countries)?
 
 ## Software
 
@@ -130,6 +130,16 @@ This configuration is very similar to what we usually have working in any office
 In additional, switching between language layouts can be lighted by status lights on keyboard. Option `grp_led:scroll` in `XKBOPTIONS` means that Scroll lock status light will be turned on after language layout was changed.
 
 More information about keyboard options in Debian: https://wiki.debian.org/Keyboard
+
+### 4. Nvidia drivers
+
+If you have NVIDIA, you are on the right side, especially if it is AI side. The following command will install Nvidia drivers:
+
+```
+sudo apt install nvidia-driver firmware-misc-nonfree
+```
+
+More information about installing Nvidia drivers in Debian: https://wiki.debian.org/NvidiaGraphicsDrivers
 
 ## Instal KDE
 
