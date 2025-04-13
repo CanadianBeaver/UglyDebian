@@ -177,6 +177,13 @@ sudo apt purge zutty vim-common debian-faq && sudo apt autoremove
 
 ## Instal other software
 
+
+### Archiver
+
+```
+sudo apt install ark
+```
+
 ### Necessary plugins
 
 ```
@@ -200,4 +207,12 @@ and setup settings:
 ```
 git config --global user.email "[user.email]"
 git config --global user.name "[user.name]"
+```
+
+### At the end
+
+Remove unnecessary programs:
+
+```
+sudo apt install purge xterm
 ```
