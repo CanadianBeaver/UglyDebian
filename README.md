@@ -166,7 +166,7 @@ More information about installing Nvidia drivers in Debian: https://wiki.debian.
 We prepared our minimal installation of Debian, now we are ready to sail for the Horn. Let's do it, it is simple:
 
 ```
-sudo apt install kde-plasma-desktop
+sudo apt install kde-plasma-desktop 
 ```
 
 Remove unnecessary programs:
@@ -178,5 +178,12 @@ sudo apt purge zutty vim-common && sudo apt autoremove
 Add necessary programs:
 
 ```
-sudo apt install dolphin-plugins
+sudo apt install dolphin-plugins 
 ```
+
+Useful package manager, unfortunately, from GTK:
+
+```
+sudo apt install synaptic apt-xapian-index software-properties-gtk
+```
+
