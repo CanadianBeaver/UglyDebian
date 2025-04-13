@@ -172,7 +172,7 @@ sudo apt install kde-plasma-desktop
 Remove unnecessary programs:
 
 ```
-sudo apt purge zutty vim && sudo apt autoremove
+sudo apt purge zutty vim-common && sudo apt autoremove
 ```
 
 Add necessary programs:
