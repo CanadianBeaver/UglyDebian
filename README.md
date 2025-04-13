@@ -136,8 +136,28 @@ More information about keyboard options in Debian: https://wiki.debian.org/Keybo
 If you have NVIDIA, you are on the right side, especially if it is AI side. The following command will install Nvidia drivers:
 
 ```
-sudo apt install nvidia-driver firmware-misc-nonfree
+sudo apt install nvidia-driver
 ```
+
+After instalation you have to check this output:
+
+```
+sudo cat /sys/module/nvidia_drm/parameters/modeset
+```
+
+if it returns `N` then change the `/etc/modprobe.d/nvidia-options.conf` file:
+
+```
+sudo nano /etc/modprobe.d/nvidia-options.conf
+```
+
+and add this string to the end:
+
+```
+options nvidia-drm modeset=1
+```
+
+Also, uncomment power manager options for hibernation and sleep.
 
 More information about installing Nvidia drivers in Debian: https://wiki.debian.org/NvidiaGraphicsDrivers
 
