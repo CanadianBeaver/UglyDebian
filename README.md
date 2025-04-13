@@ -172,13 +172,13 @@ sudo apt install kde-plasma-desktop
 Remove unnecessary programs:
 
 ```
-sudo apt purge zutty vim-common && sudo apt autoremove
+sudo apt purge zutty vim-common debian-faq && sudo apt autoremove
 ```
 
 Add necessary pligins:
 
 ```
-sudo apt install dolphin-plugins
+sudo apt install dolphin-plugins aspell-ru hunspell-ru irussian
 ```
 
 Useful package manager, unfortunately, from GTK:
