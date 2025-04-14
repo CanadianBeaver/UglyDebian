@@ -209,6 +209,12 @@ git config --global user.email "[user.email]"
 git config --global user.name "[user.name]"
 ```
 
+### NAS and samba
+
+```
+sudo apt install cifs-utils
+```
+
 ### Icons
 
 ```
