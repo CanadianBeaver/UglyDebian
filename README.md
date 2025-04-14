@@ -208,3 +208,9 @@ and setup settings:
 git config --global user.email "[user.email]"
 git config --global user.name "[user.name]"
 ```
+
+### Icons
+
+```
+sudo apt install papirus-icon-theme faenza-icon-theme numix-icon-theme-circle
+```
