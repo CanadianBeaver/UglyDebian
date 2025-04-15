@@ -218,5 +218,5 @@ sudo apt install cifs-utils
 ### Icons
 
 ```
-sudo apt install papirus-icon-theme faenza-icon-theme numix-icon-theme-circle
+sudo apt install papirus-icon-theme faenza-icon-theme numix-icon-theme-circle kde-spectacle
 ```
